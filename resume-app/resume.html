@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles/resume.css">
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" id="searchInput" placeholder="Search for keywords to filter the result">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <div id="resume-container">
+        <div class="header-details">
+            <h1></h1>
+            <p></p>
+            <img id="user-icon" src="images/user_icon.png" alt="User Icon">
+        </div>
+        <div class="bottom-container">
+            <div class="sidebar">
+                <div class="info-section">
+                    <h3>Personal Information</h3>
+                    <p id="phone"></p>
+                    <p id="email"></p>
+                    <a id="linkedin" href="#" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="info-section">
+                    <h3>Technical Skills</h3>
+                    <p id="skills"></p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Hobbies</h3>
+                    <p id="hobbies"></p>
+                </div>
+            </div>
+
+            <div id="resumeContent"></div>
+        </div>
+    </div>
+
+    <img id="error-image" src="images/error_image.png" alt="No results found" style="display:none;">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
